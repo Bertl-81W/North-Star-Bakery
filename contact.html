@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>North Star Bakery | Contact</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
 
@@ -36,7 +37,7 @@
                 with you.
             </p>
 
-            <form action="#" method="post">
+            <form action="#" method="post" novalidate>
 
                 <fieldset>
                     <legend>Contact Information</legend>
@@ -48,6 +49,7 @@
                                name="name"
                                required
                                minlength="2">
+                            <span class="error-message" id="name-error"></span>
                     </p>
 
                     <p>
@@ -56,6 +58,7 @@
                                id="email"
                                name="email"
                                required>
+                            <span class="error-message" id="email-error"></span>    
                     </p>
                 </fieldset>
 
@@ -65,9 +68,10 @@
                     <p>
                         <label for="pickup-date">Preferred Pickup Date:</label>
                         <input type="date"
-                               id="pickup-date"
-                               name="pickup-date"
-                               required>
+                            id="pickup-date"
+                            name="pickup-date"
+                            required>
+                        <span class="error-message" id="pickup-date-error"></span>
                     </p>
 
                     <p>
@@ -81,6 +85,7 @@
                                 General Question
                             </option>
                         </select>
+                        <span class="error-message" id="request-type-error"></span>
                     </p>
 
                     <p>
@@ -91,6 +96,7 @@
                                   cols="40"
                                   required
                                   minlength="10"></textarea>
+                                <span class="error-message" id="item-details-error"></span>  
                     </p>
 
                     <p>
@@ -106,9 +112,10 @@
                 </fieldset>
 
                 <p>
-                    <button type="submit">Submit Request</button>
+                  <button type="submit">Submit Request</button>
                 </p>
 
+                <p id="form-success"></p>
             </form>
         </section>
 

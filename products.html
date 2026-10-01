@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>North Star Bakery | Products</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
 
@@ -40,10 +41,30 @@
             </p>
 
             <ul>
-                <li>Signature Loaf — $6–$9</li>
-                <li>Country Sourdough — $7–$10</li>
-                <li>Whole Grain Bread — $6–$9</li>
-                <li>Seasonal Artisan Bread — $7–$11</li>
+                <li>
+                    Signature Loaf — $6–$9
+                    <button class="favorite-button" data-product="Signature Loaf">
+                        Add to Favorites
+                    </button>
+                </li>
+                <li>
+                    Country Sourdough — $7–$10
+                    <button class="favorite-button" data-product="Country Sourdough">
+                        Add to Favorites
+                    </button>
+                </li>
+                <li>
+                    Whole Grain Bread — $6–$9
+                    <button class="favorite-button" data-product="Whole Grain Bread">
+                        Add to Favorites
+                    </button>
+                </li>
+                <li>
+                    Seasonal Artisan Bread — $7–$11
+                    <button class="favorite-button" data-product="Seasonal Artisan Bread">
+                        Add to Favorites
+                    </button>
+                </li>
             </ul>
         </section>
 
@@ -56,10 +77,30 @@
             </p>
 
             <ul>
-                <li>Butter Croissant — $3–$5</li>
-                <li>Fruit Danish — $4–$6</li>
-                <li>Cinnamon Roll — $4–$6</li>
-                <li>Seasonal Muffin — $3–$5</li>
+                <li>
+                    Butter Croissant — $3–$5
+                    <button class="favorite-button" data-product="Butter Croissant">
+                        Add to Favorites
+                    </button>
+                </li>
+                <li>
+                    Fruit Danish — $4–$6
+                    <button class="favorite-button" data-product="Fruit Danish">
+                        Add to Favorites
+                    </button>
+                </li>
+                <li>
+                    Cinnamon Roll — $4–$6
+                    <button class="favorite-button" data-product="Cinnamon Roll">
+                        Add to Favorites
+                    </button>
+                </li>
+                <li>
+                    Seasonal Muffin — $3–$5
+                    <button class="favorite-button" data-product="Seasonal Muffin">
+                        Add to Favorites
+                    </button>
+                </li>
             </ul>
         </section>
 
@@ -73,11 +114,38 @@
             </p>
 
             <ul>
-                <li>Small Celebration Cake — $25–$40</li>
-                <li>Large Celebration Cake — $45–$70</li>
-                <li>Custom Decorated Cake — $50–$100+</li>
-                <li>Seasonal Cake — $35–$65</li>
+                <li>
+                    Small Celebration Cake — $25–$40
+                    <button class="favorite-button" data-product="Small Celebration Cake">
+                        Add to Favorites
+                    </button>
+                </li>
+                <li>
+                    Large Celebration Cake — $45–$70
+                    <button class="favorite-button" data-product="Large Celebration Cake">
+                        Add to Favorites
+                    </button>
+                </li>
+                <li>
+                    Custom Decorated Cake — $50–$100+
+                    <button class="favorite-button" data-product="Custom Decorated Cake">
+                        Add to Favorites
+                    </button>
+                </li>
+                <li>
+                    Seasonal Cake — $35–$65
+                    <button class="favorite-button" data-product="Seasonal Cake">
+                        Add to Favorites
+                    </button>
+                </li>
             </ul>
+        </section>
+
+        <section>
+            <h2>Your Favorite</h2>
+            <p id="favorite-message">
+                You have not selected a favorite product yet.
+            </p>
         </section>
 
         <section>

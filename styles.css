@@ -145,6 +145,10 @@ input[type="submit"]:hover {
     background-color: #6B3E26;;
 }
 
+.favorite-button {
+    margin: 0.35rem 0;
+}
+
 /* ---------- Forms ---------- */
 
 form {
